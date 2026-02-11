@@ -23,7 +23,7 @@ EOT
     parallel_deployments           = optional(number)
     policy_definition_reference_id = optional(string)
     resource_count                 = optional(number)
-    resource_discovery_mode        = optional(string, "ExistingNonCompliant")
+    resource_discovery_mode        = optional(string) # Default: "ExistingNonCompliant"
   }))
 }
 
