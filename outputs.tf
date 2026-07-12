@@ -1,3 +1,7 @@
+output "subscription_policy_remediations_id" {
+  description = "Map of id values across all subscription_policy_remediations, keyed the same as var.subscription_policy_remediations"
+  value       = { for k, v in azurerm_subscription_policy_remediation.subscription_policy_remediations : k => v.id }
+}
 output "subscription_policy_remediations_failure_percentage" {
   description = "Map of failure_percentage values across all subscription_policy_remediations, keyed the same as var.subscription_policy_remediations"
   value       = { for k, v in azurerm_subscription_policy_remediation.subscription_policy_remediations : k => v.failure_percentage }
