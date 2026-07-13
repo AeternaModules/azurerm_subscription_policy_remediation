@@ -23,7 +23,7 @@ EOT
     parallel_deployments           = optional(number)
     policy_definition_reference_id = optional(string)
     resource_count                 = optional(number)
-    resource_discovery_mode        = optional(string) # Default: "ExistingNonCompliant"
+    resource_discovery_mode        = optional(string)
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_subscription_policy_remediation's provider source ---
   # Not auto-enabled: either a bespoke provider validator we can't safely translate,
